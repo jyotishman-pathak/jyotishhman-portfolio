@@ -23,7 +23,7 @@ export function generatePersonStructuredData() {
       `https://github.com/${selfData.socials_username.github}`,
       `https://linkedin.com/in/${selfData.socials_username.linkedin}`,
       `https://twitter.com/${selfData.socials_username.twitter}`,
-      `https://instagram.com/${selfData.socials_username.instagram}`,
+   
     ],
     url: "https://aarab.vercel.app",
     description: selfData.bio,
@@ -71,7 +71,7 @@ export function generateOrganizationStructuredData() {
       `https://github.com/${selfData.socials_username.github}`,
       `https://linkedin.com/in/${selfData.socials_username.linkedin}`,
       `https://twitter.com/${selfData.socials_username.twitter}`,
-      `https://instagram.com/${selfData.socials_username.instagram}`,
+   
     ],
   };
 }
