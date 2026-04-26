@@ -35,7 +35,7 @@ export const selfData = {
   socials_username: {
     github: "jyotishman-pathak",
     linkedin: "jyotishmanpathak",
-    telegram: "jyoti@1368",
+   
     twitter: "jyotishman__dev",
     // Add Discord if you have one; Solana community is on Discord
   },

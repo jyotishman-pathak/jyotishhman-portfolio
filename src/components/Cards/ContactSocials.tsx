@@ -20,11 +20,7 @@ export const ContactSocials = () => {
       link: `https://www.linkedin.com/in/${selfData.socials_username.linkedin}`,
       initial: 10,
     },
-    {
-      Icon: PiTelegramLogo,
-      link: `https://t.me/${selfData.socials_username.telegram}`,
-      initial: -10,
-    },
+    
     {
       Icon: FaTwitter,
       link: `https://twitter.com/${selfData.socials_username.twitter}`,

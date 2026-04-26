@@ -25,7 +25,7 @@ export function generatePersonStructuredData() {
       `https://twitter.com/${selfData.socials_username.twitter}`,
    
     ],
-    url: "https://aarab.vercel.app",
+    url: "https://Jyotishman.vercel.app",
     description: selfData.bio,
   };
 }
@@ -34,10 +34,10 @@ export function generateWebsiteStructuredData() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Aarab Nishchal - Portfolio",
-    url: "https://aarab.vercel.app",
+    name: "Jyotishman  - Portfolio",
+    url: "https://jyotishmanpathak.vercel.app",
     description:
-      "Aarab Nishchal's portfolio featuring projects in React, Next.js, and modern web development",
+      "Jyotishman Pathak  portfolio featuring projects in React, Next.js, and Solana and Anchor",
     author: {
       "@type": "Person",
       name: selfData.name,
@@ -60,8 +60,8 @@ export function generateOrganizationStructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: selfData.name,
-    url: "https://aarab.vercel.app",
-    logo: "https://aarab.vercel.app/images/logo.png",
+    url: "https://Jyotishmanpathak.vercel.app",
+    logo: "https://Jyotishmanpathak.vercel.app/images/logo.png",
     description: selfData.bio,
     founder: {
       "@type": "Person",
@@ -80,10 +80,10 @@ export function generateResumeStructuredData() {
   return {
     "@context": "https://schema.org",
     "@type": "DigitalDocument",
-    name: "Aarab Nishchal Resume",
+    name: "Jyotishman Pathak Resume",
     description:
-      "Professional resume of Aarab Nishchal - Student Developer specializing in Full-Stack Web Development",
-    url: "https://aarab.vercel.app/resume",
+      "Professional resume of Jyotishman Pathak - Student Developer specializing in Full-Stack Web Development and Solana",
+    url: "https://Jyotishman.vercel.app/resume",
     author: {
       "@type": "Person",
       name: selfData.name,
@@ -106,8 +106,8 @@ export function generateResumeStructuredData() {
     },
     dateModified: new Date().toISOString(),
     fileFormat: "application/pdf",
-    contentUrl: "https://aarab.vercel.app/docs/MyResume.pdf",
-    downloadUrl: "https://aarab.vercel.app/docs/MyResume.pdf",
+    contentUrl: "https://Jyotishman.vercel.app/docs/MyResume.pdf",
+    downloadUrl: "https://Jyotishman.vercel.app/docs/MyResume.pdf",
     keywords: [
       "Software Developer",
       "Full Stack Developer",
