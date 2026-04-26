@@ -67,9 +67,9 @@ export function EmailTemplate({
           </Section>
 
           <Section>
-            <Text style={heading}>Hey {userName}! 🚀</Text>
+            <Text style={heading}>Hey {userName}! </Text>
             <Text style={text}>
-              Thanks a lot! for reaching out! 🎉 <br />
+              Thanks a lot! for reaching out! <br />
               Your message just landed safely in my inbox, and I&apos;ve already
               notified the caffeine team (aka me) to get on it ASAP.
             </Text>
