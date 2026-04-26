@@ -37,11 +37,7 @@ export function EmailTemplate({
       icon: "https://cdn-icons-png.flaticon.com/512/145/145807.png",
     },
    
-    {
-      name: "Instagram",
-      url: `https://instagram.com/${selfData.socials_username.instagram}`,
-      icon: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png",
-    },
+   
     {
       name: "X",
       url: `https://x.com/${selfData.socials_username.twitter}`,
