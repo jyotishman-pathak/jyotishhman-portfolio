@@ -2,12 +2,12 @@ export const selfData = {
   name: "Jyotishman Pathak",
   first_name: "Jyotishman",
   last_name: "Pathak",
-  jobTitle: "Student Developer",
-  workFor: "JIST Jorhat",
+  jobTitle: "Web3 Engineer | Solana & Anchor Specialist",
+  workFor: "Ecochain (DMRV Portal) & Independent Solana Builder",
   current_location: {
     city: "Jorhat",
     state: "Assam",
-    country: "India",
+    country: "India (Remote – Global)",
   },
   DOB: {
     dd: 28,
@@ -15,34 +15,28 @@ export const selfData = {
     yyyy: 2003,
   },
   email: "workwithjyotishman@gmail.com",
-  roles:  [
-" Full-Stack Engineer ",
-"Backend Engineer (Distributed Systems Focus)",
-"DevOps Engineer",
-"Infrastructure Engineer",
-"Site Reliability Engineer (SRE)",
-"Solutions Architect",
-"Platform Engineer",
-"Real-Time Systems Engineer",
-"Software Engineer - Cloud & Infrastructure"
+  roles: [
+    "Solana Blockchain Developer (Anchor/Rust)",
+    "Web3 Full-Stack Engineer",
+    "Smart Contract Engineer",
+    "Backend Architect (Distributed Systems)",
+    "Infrastructure & DevOps Specialist",
+    "Real-Time Systems Engineer"
   ],
- "desc": "I architect and engineer scalable, full-stack systems built for real-world performance.",
-"bio": "A systems-oriented developer focused on building resilient, distributed applications. I specialize in transforming complex technical requirements into efficient, monitored, and scalable solutions using modern stacks.",
-"about": [
-"I develop full-stack applications with a strong emphasis on backend architecture, data flow, and infrastructure. My current focus is on building high-throughput systems using event-driven patterns, message brokers like Kafka, and real-time communication with Socket.io.",
-"I implement robust DevOps practices including containerized deployments with Docker, orchestration with Kubernetes, and comprehensive monitoring with Prometheus and Grafana to ensure system reliability and performance.",
-"I optimize data layers with PostgreSQL, Prisma, and Redis, focusing on indexing, normalization, and efficient query design. I build defensive mechanisms against abuse using rate limiting and DDoS protection strategies.",
-"I'm passionate about end-to-end ownership of projects—from designing the system architecture and developing features to automating deployment and ensuring observability in production environments."
+  "desc": "I build high‑performance Solana dApps with Anchor, Rust, and TypeScript. I bridge the gap between traditional distributed systems and next‑generation blockchain infrastructure.",
+  "bio": "Full‑stack Web3 developer focused on Solana ecosystem. Currently building Ecochain — a government‑backed DMRV carbon credit portal — and an on‑chain orderbook prediction market. Strong foundation in event‑driven systems, Kafka, Kubernetes, and low‑latency architectures.",
+  "about": [
+    "I architect and implement Solana programs using Anchor framework and Rust, with a strong emphasis on security, gas efficiency, and account management.",
+    "I design on‑chain orderbooks, prediction market smart contracts, and DMRV (Digital Measurement, Reporting & Verification) systems for carbon credits — bridging real‑world regulation with decentralized infrastructure.",
+    "My backend engineering roots (Kafka, Redis, Node.js, PostgreSQL) let me build robust, scalable off‑chain services that feed into and out of Solana programs.",
+    "I handle full DevOps lifecycle: Docker, Kubernetes, Prometheus/Grafana monitoring, ensuring Web3 services are as reliable as Web2 — but trustless.",
+    // "Passionate about India’s role in global blockchain adoption and leveraging Solana’s speed for real‑world impact (climate, finance, governance)."
   ],
-
   socials_username: {
-    facebook: "#",
     github: "jyotishman-pathak",
-    instagram: "jyotishman.pathak._",
-    
     linkedin: "jyotishmanpathak",
- 
     telegram: "jyoti@1368",
-    twitter: "jyotishman1368",
+    twitter: "jyotishman__dev",
+    // Add Discord if you have one; Solana community is on Discord
   },
 };

@@ -22,6 +22,15 @@ import {
   FaMicrochip,
   FaExchangeAlt,
   FaTachometerAlt,
+  FaJsSquare,
+  FaImage,
+  FaCoins,
+  FaAnchor,
+  FaSun,
+  FaCandyCane,
+  FaBook,
+  FaLeaf,
+  FaFileContract,
 } from "react-icons/fa";
 
 import {
@@ -39,6 +48,7 @@ import {
   SiPrometheus,
   SiGrafana,
   SiNewrelic,
+  SiRust,
 } from "react-icons/si";
 
 interface LogoProps {
@@ -85,67 +95,23 @@ export const skillsData: SkillsDataProps[] = [
     ],
   },
   {
-    title: "DevOps & Cloud",
-    data: [
-      { title: "Docker", logoComponent: FaDocker, color: "#2496ED" },
-      { title: "Kubernetes", logoComponent: SiKubernetes, color: "#326CE5" },
-      { title: "AWS", logoComponent: FaAws, color: "#FF9900" },
-      { title: "Prometheus", logoComponent: SiPrometheus, color: "#E6522C" },
-      { title: "Grafana", logoComponent: SiGrafana, color: "#F46800" },
-      { title: "New Relic", logoComponent: SiNewrelic, color: "#008C99" },
-    ],
-  },
-  {
-    title: "Concepts & Technologies",
-    data: [
-      { title: "Microservices", logoComponent: FaMicrochip, color: "#1890FF" },
-      {
-        title: "Event-Driven Architecture",
-        logoComponent: FaExchangeAlt,
-        color: "#722ED1",
-      },
-      {
-        title: "Rate Limiting",
-        logoComponent: FaTachometerAlt,
-        color: "#FA541C",
-      },
-      {
-        title: "DDOS Protection",
-        logoComponent: FaShieldAlt,
-        color: "#52C41A",
-      },
-      {
-        title: "Database Indexing",
-        logoComponent: FaDatabase,
-        color: "#FAAD14",
-      },
-      {
-        title: "Database Normalization",
-        logoComponent: FaProjectDiagram,
-        color: "#13C2C2",
-      },
-      {
-        title: "Pub/Sub Patterns",
-        logoComponent: FaBroadcastTower,
-        color: "#EB2F96",
-      },
-      {
-        title: "Message Queues",
-        logoComponent: FaListAlt,
-        color: "#F5222D",
-      },
-      {
-        title: "Auto Scaling",
-        logoComponent: FaExpandArrowsAlt,
-        color: "#722ED1",
-      },
-      {
-        title: "Monitoring & Observability",
-        logoComponent: FaChartLine,
-        color: "#1890FF",
-      },
-    ],
-  },
+  title: "Blockchain / Web3",
+  data: [
+    { title: "Solana", logoComponent: FaSun, color: "#9945FF" },
+    { title: "Anchor Framework", logoComponent: FaAnchor, color: "#00E0FF" },
+    { title: "Rust", logoComponent: SiRust, color: "#000000" }, // use a rust icon
+    { title: "SPL Tokens", logoComponent: FaCoins, color: "#FFD700" },
+    { title: "Metaplex", logoComponent: FaImage, color: "#FF69B4" },
+    { title: "Web3.js", logoComponent: FaJsSquare, color: "#F7DF1E" },
+    { title: "Candy Machine", logoComponent: FaCandyCane, color: "#FFA500" },
+    { title: "On‑Chain Orderbooks", logoComponent: FaBook, color: "#00FF00" },
+    { title: "Carbon Credits", logoComponent: FaLeaf, color: "#228B22" },
+    { title: "Smart Contracts", logoComponent: FaFileContract, color: "#FFFFFF" },
+  ]
+},
+
+  
+
 ];
 
 export default function Skills() {

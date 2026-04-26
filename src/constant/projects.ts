@@ -1,43 +1,18 @@
 export const projectsData = [
   {
-    name: "AI GitHub Helper",
+    name: "Ecochain – DMRV Carbon Credit Portal (Solana)",
     description:
-      "AI-powered tool that automates GitHub workflows by analyzing repositories. Provides intelligent commit summaries and context-aware responses using LangChain and GitHub API integration. Features a conversational assistant for repository insights.",
-    github_link: "https://github.com/yourusername/ai-github-helper",
-    demo: "https://ai-github-helper.vercel.app/",
-    tech: ["Next.js", "TypeScript", "LangChain", "GitHub API", "AI Integration"],
+      "Government‑integrated platform for digital measurement, reporting, and verification of carbon credits built on Solana. Uses Anchor for smart contracts to track, mint, and retire carbon credits immutably. Implements a dashboard for auditors and registrants, with off‑chain Kafka pipelines for real‑time data ingestion.",
+    tech: ["Anchor", "Rust", "Solana CLI", "Next.js", "TypeScript", "Kafka", "PostgreSQL", "Docker"],
+    status: "In Development",
+    link: "https://github.com/yourusername/ecochain" // When available
   },
   {
-    name: "Attendance Manager",
+    name: "On‑Chain Orderbook Prediction Market (Solana)",
     description:
-      "Full-stack attendance tracking system with real-time analytics dashboard. Supports employee/student management with visual data representations. Features secure authentication, role-based access, and export functionality.",
-    github_link: "https://github.com/yourusername/attendance-manager",
-    demo: "https://attendance-manager.vercel.app/",
-    tech: ["React", "Node.js", "MongoDB", "Express", "Chart.js", "JWT Auth"],
-  },
-  {
-    name: "Distributed Event System",
-    description:
-      "Zapier-like distributed event processing system using Kafka for pub/sub messaging. Implements worker-based processing with load balancing for high throughput event handling in microservices architecture.",
-    github_link: "https://github.com/yourusername/distributed-event-system",
-    tech: ["Kafka", "Node.js", "Docker", "Load Balancing", "Microservices"],
-  },
-  {
-    name: "Real-Time Multiplayer Platform",
-    description:
-      "Scalable real-time gaming platform with WebSocket connections, Redis pub/sub for horizontal scaling, and Kafka for event streaming. Features matchmaking, virtual economy, and comprehensive monitoring.",
-    github_link: "#", // Placeholder
-    demo: "#", // Placeholder
-    tech: ["Next.js", "Socket.io", "Redis", "Kafka", "K8s", "Prometheus"],
-    status: "In Development"
-  },
-  {
-    name: "Distributed Data Pipeline",
-    description:
-      "High-performance distributed web scraping platform with auto-scaling worker pools, Redis queue management, and Kafka-based data processing. Features robust monitoring and rate limiting implementation.",
-    github_link: "#", // Placeholder
-    demo: "#", // Placeholder
-    tech: ["Node.js", "Redis Queue", "Kafka", "K8s", "Grafana", "Docker"],
-    status: "In Development"
-  },
+      "Decentralized prediction market platform similar to Kalshi, built with an on‑chain orderbook on Solana. Utilizes Anchor for program logic, matching engine partially on‑chain, and a React frontend for placing bets. Implements event‑based resolution oracles and USDC settlement. Designed to handle high‑frequency order placements with low latency.",
+    tech: ["Anchor", "Rust", "Solana", "TypeScript", "React", "WebSockets", "Redis"],
+    status: "Ongoing",
+    link: "https://github.com/yourusername/solana-prediction-market"
+  }
 ];
