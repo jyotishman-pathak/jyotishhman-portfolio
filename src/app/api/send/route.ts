@@ -22,7 +22,7 @@ export async function POST(request: Request) {
   }
 
   try {
-   
+
     const submission = await prisma.contactSubmission.create({
       data: {
         name: senderName,
@@ -47,12 +47,12 @@ export async function POST(request: Request) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user:'workwithjyotishman@gmail.com',
-        pass:'edmprkabkydqygbu'
+        user: 'workwithjyotishman@gmail.com',
+        pass: 'edmprkabkydqygbu'
       },
     });
 
-    // 4. Send email
+    // 4. Send email to the user who filled the form
     await transporter.sendMail({
       from: `"Resume@Jyotishman-Pathak" <${process.env.EMAIL_FROM}>`,
       to: `${senderName} <${senderEmail}>`,
@@ -60,7 +60,22 @@ export async function POST(request: Request) {
       html: htmlContent,
     });
 
-    // 5. Mark as processed
+    // 5. Send notification email to YOU (the portfolio owner)
+    await transporter.sendMail({
+      from: `"Portfolio Contact Form" <${process.env.EMAIL_FROM}>`,
+      to: "jyotishmanpathak.work@gmail.com", // Your email
+      subject: `New Contact Submission from ${senderName}`,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${senderName}</p>
+        <p><strong>Email:</strong> ${senderEmail}</p>
+        <p><strong>Reason:</strong> ${reasonToContact}</p>
+        <p><strong>Message:</strong></p>
+        <p>${senderMsg}</p>
+      `,
+    });
+
+    // 6. Mark as processed
     await prisma.contactSubmission.update({
       where: { id: submission.id },
       data: { isProcessed: true },

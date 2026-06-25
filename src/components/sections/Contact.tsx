@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { IconType } from "react-icons";
 import { useRef } from "react";
 
-import { IoLocationOutline, IoMailOutline } from "react-icons/io5";
+import { IoLocationOutline, IoMailOutline, IoLogoWhatsapp } from "react-icons/io5";
 
 import { selfData } from "@/constant";
 import { nasalization } from "@/app/fonts";
@@ -140,6 +140,12 @@ const ContactList = () => {
         label="Email"
         value={selfData.email}
         href={`mailto:${selfData.email}`}
+      />
+      <ContactItem
+        icon={IoLogoWhatsapp}
+        label="WhatsApp"
+        value="+91 7002912577"
+        href="https://wa.me/917002912577"
       />
       <ContactItem
         icon={IoLocationOutline}

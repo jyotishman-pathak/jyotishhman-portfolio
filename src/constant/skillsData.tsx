@@ -1,30 +1,8 @@
 "use client";
 
 import React from "react";
-
-import {
-  FaCss3,
-  FaGithub,
-  FaHtml5,
-  FaJava,
-  FaPython,
-  FaReact,
-  FaNodeJs,
-
-  FaJsSquare,
-  FaImage,
-  FaCoins,
-  FaAnchor,
-  FaSun,
-  FaCandyCane,
-  FaBook,
-  FaLeaf,
-  FaFileContract,
-} from "react-icons/fa";
-
 import {
   SiTypescript,
-  SiJavascript,
   SiPostgresql,
   SiRedis,
   SiNextdotjs,
@@ -33,12 +11,11 @@ import {
   SiSocketdotio,
   SiApachekafka,
   SiPrisma,
-  SiKubernetes,
-  SiPrometheus,
-  SiGrafana,
-  SiNewrelic,
-  SiRust,
+  SiDocker,
+  SiAmazon,
+  SiWebrtc, // Add this if available, or use a generic icon
 } from "react-icons/si";
+import { FaNodeJs, FaGitAlt, FaLinux } from "react-icons/fa";
 
 interface LogoProps {
   title: string;
@@ -53,54 +30,42 @@ interface SkillsDataProps {
 
 export const skillsData: SkillsDataProps[] = [
   {
-    title: "Languages & Databases",
+    title: "Core Languages",
     data: [
       { title: "TypeScript", logoComponent: SiTypescript, color: "#3178C6" },
-      { title: "JavaScript", logoComponent: SiJavascript, color: "#F7DF1E" },
-      { title: "PostgreSQL", logoComponent: SiPostgresql, color: "#4169E1" },
-      { title: "Redis", logoComponent: SiRedis, color: "#DC382D" },
-      { title: "Java", logoComponent: FaJava, color: "#007396" },
-      { title: "Python", logoComponent: FaPython, color: "#3776AB" },
+      // JS implied by TS + Node
     ],
   },
   {
-    title: "Frontend Development",
+    title: "Frontend (Next.js Stack)",
     data: [
       { title: "Next.js", logoComponent: SiNextdotjs, color: "#000000" },
-      { title: "React", logoComponent: FaReact, color: "#61DAFB" },
-      { title: "HTML5", logoComponent: FaHtml5, color: "#E34F26" },
-      { title: "CSS3", logoComponent: FaCss3, color: "#1572B6" },
       { title: "Tailwind CSS", logoComponent: SiTailwindcss, color: "#06B6D4" },
+      // React, HTML, CSS implied by Next.js
     ],
   },
   {
-    title: "Backend & Infrastructure",
+    title: "Backend & Real-Time",
     data: [
       { title: "Node.js", logoComponent: FaNodeJs, color: "#339933" },
-      { title: "Express.js", logoComponent: SiExpress, color: "#000000" },
+      { title: "Express", logoComponent: SiExpress, color: "#000000" },
       { title: "Socket.io", logoComponent: SiSocketdotio, color: "#010101" },
-      { title: "Kafka", logoComponent: SiApachekafka, color: "#231F20" },
+      { title: "WebRTC", logoComponent: SiWebrtc, color: "#333333" }, // P2P/Video
+      { title: "Redis", logoComponent: SiRedis, color: "#DC382D" },
+      { title: "PostgreSQL", logoComponent: SiPostgresql, color: "#4169E1" },
       { title: "Prisma", logoComponent: SiPrisma, color: "#2D3748" },
     ],
   },
   {
-  title: "Blockchain / Web3",
-  data: [
-    { title: "Solana", logoComponent: FaSun, color: "#9945FF" },
-    { title: "Anchor Framework", logoComponent: FaAnchor, color: "#00E0FF" },
-    { title: "Rust", logoComponent: SiRust, color: "#000000" }, // use a rust icon
-    { title: "SPL Tokens", logoComponent: FaCoins, color: "#FFD700" },
-    { title: "Metaplex", logoComponent: FaImage, color: "#FF69B4" },
-    { title: "Web3.js", logoComponent: FaJsSquare, color: "#F7DF1E" },
-    { title: "Candy Machine", logoComponent: FaCandyCane, color: "#FFA500" },
-    { title: "On‑Chain Orderbooks", logoComponent: FaBook, color: "#00FF00" },
-    { title: "Carbon Credits", logoComponent: FaLeaf, color: "#228B22" },
-    { title: "Smart Contracts", logoComponent: FaFileContract, color: "#FFFFFF" },
-  ]
-},
-
-  
-
+    title: "Infrastructure & DevOps",
+    data: [
+      { title: "Docker", logoComponent: SiDocker, color: "#2496ED" },
+      { title: "AWS Basics", logoComponent: SiAmazon, color: "#FF9900" },
+      { title: "Kafka", logoComponent: SiApachekafka, color: "#231F20" }, // optional
+      { title: "Git", logoComponent: FaGitAlt, color: "#F05032" },
+      { title: "Linux", logoComponent: FaLinux, color: "#000000" },
+    ],
+  },
 ];
 
 export default function Skills() {

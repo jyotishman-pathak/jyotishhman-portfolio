@@ -2,8 +2,8 @@ export const selfData = {
   name: "Jyotishman Pathak",
   first_name: "Jyotishman",
   last_name: "Pathak",
-  jobTitle: "Web3 Engineer | Solana & Anchor Specialist",
-  workFor: "Ecochain (DMRV Portal) & Independent Solana Builder",
+  jobTitle: "Backend Engineer | Real-Time Systems & Full-Stack (Node/Next.js)",
+  workFor: "Building GhostMesh (P2P WebRTC) & TicketForge (Redis-heavy backend)",
   current_location: {
     city: "Jorhat",
     state: "Assam",
@@ -14,29 +14,26 @@ export const selfData = {
     mm: 9,
     yyyy: 2003,
   },
-  email: "workwithjyotishman@gmail.com",
+  email: "jyotishmanpathak.work@gmail.com",
   roles: [
-    "Solana Blockchain Developer (Anchor/Rust)",
-    "Web3 Full-Stack Engineer",
-    "Smart Contract Engineer",
-    "Backend Architect (Distributed Systems)",
-    "Infrastructure & DevOps Specialist",
-    "Real-Time Systems Engineer"
+    "Backend Engineer (Node.js / TypeScript)",
+    "Full-Stack Developer (Next.js + Prisma)",
+    "Real-Time Systems Engineer (WebRTC / Redis)",
+    "Distributed Systems Specialist",
+    "Infrastructure & DevOps (Docker / AWS)",
   ],
-  "desc": "I build high‑performance Solana dApps with Anchor, Rust, and TypeScript. I bridge the gap between traditional distributed systems and next‑generation blockchain infrastructure.",
-  "bio": "Full‑stack Web3 developer focused on Solana ecosystem. Currently building Ecochain — a government‑backed DMRV carbon credit portal — and an on‑chain orderbook prediction market. Strong foundation in event‑driven systems, Kafka, Kubernetes, and low‑latency architectures.",
-  "about": [
-    "I architect and implement Solana programs using Anchor framework and Rust, with a strong emphasis on security, gas efficiency, and account management.",
-    "I design on‑chain orderbooks, prediction market smart contracts, and DMRV (Digital Measurement, Reporting & Verification) systems for carbon credits — bridging real‑world regulation with decentralized infrastructure.",
-    "My backend engineering roots (Kafka, Redis, Node.js, PostgreSQL) let me build robust, scalable off‑chain services that feed into and out of Solana programs.",
-    "I handle full DevOps lifecycle: Docker, Kubernetes, Prometheus/Grafana monitoring, ensuring Web3 services are as reliable as Web2 — but trustless.",
-    // "Passionate about India’s role in global blockchain adoption and leveraging Solana’s speed for real‑world impact (climate, finance, governance)."
+  desc: "I build production-grade real-time systems with Node.js, Redis, and WebRTC. I bridge the gap between elegant frontend experiences and robust, scalable backend infrastructure.",
+  bio: "Full-stack engineer focused on distributed systems and real-time communication. Currently building GhostMesh (zero-knowledge P2P collaboration) and TicketForge (high-concurrency Redis backend). Strong foundation in caching strategies, NAT traversal, event-driven architecture, and production deployment.",
+  about: [
+    "I architect real-time backends using Redis for caching, rate limiting, distributed locks, and Streams-based event processing — with deliberate trade-off analysis for each data structure choice.",
+    "I implement WebRTC systems from scratch: signaling design, ICE/STUN/TURN fallback, DataChannel file transfer, and connection state machines — with debugging via `webrtc-internals` and `redis-cli MONITOR`.",
+    "My full-stack foundation (Next.js, Node.js, Prisma, PostgreSQL) lets me build end-to-end features: from React hooks to database migrations to Dockerized deployment.",
+    "I prioritize production readiness: Docker compose, GitHub Actions CI, load testing with k6/autocannon, and structured logging — because shipped > perfect.",
+    "Passionate about India's growing remote engineering talent and building systems that scale without sacrificing developer experience."
   ],
   socials_username: {
     github: "jyotishman-pathak",
     linkedin: "jyotishmanpathak",
-   
     twitter: "jyotishman__dev",
-    // Add Discord if you have one; Solana community is on Discord
   },
 };

@@ -1,20 +1,31 @@
 export const projectsData = [
   {
-    name: "Ecochain – DMRV Carbon Credit Portal (Solana)",
+    name: "GhostMesh – Zero‑Knowledge P2P Collaboration Platform",
     description:
-      "Government‑integrated platform for digital measurement, reporting, and verification of carbon credits built on Solana. Uses Anchor for smart contracts to track, mint, and retire carbon credits immutably. Implements a dashboard for auditors and registrants, with off‑chain Kafka pipelines for real‑time data ingestion.",
-    tech: ["Anchor", "Rust", "Solana CLI", "Next.js", "TypeScript", "Kafka", "PostgreSQL", "Docker"],
+      "Browser‑based peer‑to‑peer video/chat/file‑transfer app with ephemeral Redis signaling, WebRTC NAT traversal, and privacy‑first auth. Implements perfect negotiation, ICE/STUN/TURN fallback, Lua‑based rate limiting, and Dockerized deployment. Built with Feature‑Sliced Design for enterprise‑grade maintainability.",
+    tech: ["WebRTC", "Redis (Upstash)", "Next.js", "Node.js", "TypeScript", "Prisma", "Docker", "Lua"],
     status: "In Development",
     github_link: "https://github.com/jyotishman-pathak",
-    demo : "#" // When available
+    demo: "#" // Deploy to Vercel + Render when ready
   },
+
   {
-    name: "On‑Chain Orderbook Prediction Market (Solana)",
+    name: "TicketForge – High‑Concurrency Event Ticketing Backend",
     description:
-      "Decentralized prediction market platform similar to Kalshi, built with an on‑chain orderbook on Solana. Utilizes Anchor for program logic, matching engine partially on‑chain, and a React frontend for placing bets. Implements event‑based resolution oracles and USDC settlement. Designed to handle high‑frequency order placements with low latency.",
-    tech: ["Anchor", "Rust", "Solana", "TypeScript", "React", "WebSockets", "Redis"],
-    status: "Ongoing",
+      "Production‑grade ticketing API handling cache‑aside, distributed locks, Lua rate limiting, and Stream‑based order queues. Prevents overselling via WATCH/MULTI transactions, implements sliding‑window rate limits, and uses HyperLogLog for analytics. Benchmarked with k6, containerized with Docker.",
+    tech: ["Redis", "Node.js", "TypeScript", "Fastify", "ioredis", "Docker", "k6", "Lua"],
+    status: "Planned",
     github_link: "https://github.com/jyotishman-pathak",
-    demo : "#"
+    demo: "#"
+  },
+
+  {
+    name: "RelayChat – Serverless P2P Chat & File Transfer",
+    description:
+      "Minimalist WebRTC‑only chat app using DataChannels for ordered/unordered messaging, binary file transfer with backpressure handling, and insertable streams for real‑time video filters. Includes connection state machine with ICE restart, stats dashboard via getStats(), and TURN fallback testing.",
+    tech: ["WebRTC", "TypeScript", "Node.js", "coturn", "Vite", "Docker"],
+    status: "Planned",
+    github_link: "https://github.com/jyotishman-pathak",
+    demo: "#"
   }
 ];
